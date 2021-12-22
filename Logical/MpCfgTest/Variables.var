@@ -1,0 +1,5 @@
+VAR
+	mappRead : BOOL;
+	mappWrite : BOOL;
+	MpCfgRW_01 : MpCfgRW;
+END_VAR

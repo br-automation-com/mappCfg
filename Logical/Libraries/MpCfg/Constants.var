@@ -1,0 +1,20 @@
+(*Buffer and variable sizes*)
+VAR CONSTANT
+	MpCfgMaxBufferSize : UINT := 10000;
+	MpCfgMaxNameSize : UINT := 200;
+	MpCfgMaxValueSize : UINT := 200;
+END_VAR
+(*Error numbers*)
+VAR CONSTANT
+	MpCfgBufferSizeExceeded : DINT := 10001;
+	MpCfgDataTypeSizeExceeded : DINT := 10002;
+	MpCfgValueSizeExceeded : DINT := 10003;
+	MpCfgParaNotFound : DINT := 10010;
+	MpCfgTypeNotFound : DINT := 10011;
+	MpCfgValueNotFound : DINT := 10012;
+END_VAR
+(*Read/Write constants*)
+VAR CONSTANT
+	MpCfgRead : BOOL := FALSE;
+	MpCfgWrite : BOOL := TRUE;
+END_VAR
