@@ -69,6 +69,7 @@ The library was developed and tested with the following versions. Older versions
 
 * Automation Studio 4.9
 * Automation Runtime D4.90
+* mapp 5.15
 * Library dependencies, MpCom, MpBase, FileIO, AsBrStr
 
 Recommended task class is #8 with a 10ms cycle time.
