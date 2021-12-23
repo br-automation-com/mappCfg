@@ -9,7 +9,7 @@
 
 <a name="Description"></a>
 ## Description
-The library mappCfg allows you to read and write mapp configuration from the PLC during runtime. To use the library in your project, add the [dependencies](#Requirements) and import the library from the sample project.
+The library mappCfg allows you to read and write mapp configuration from the PLC during runtime. To use the library in your project, add the [dependencies](#Requirements) and import the library from the sample project. In ArSIM a file device with the name 'MpCfgDev' must be created.
 
 ![image](https://user-images.githubusercontent.com/2972703/147233085-25b92c7d-92ae-4741-a929-c457c7f1f531.png)
 
@@ -72,7 +72,7 @@ The library was developed and tested with the following versions. Older versions
 * mapp 5.15
 * Library dependencies, MpCom, MpBase, FileIO, AsBrStr
 
-Recommended task class is #8 with a 10ms cycle time.
+Recommended task class is #8 with a 10ms cycle time. In ArSIM a file device with the name 'MpCfgDev' must be created.
 
 <a name="Limitations"></a>
 ## Limitations
