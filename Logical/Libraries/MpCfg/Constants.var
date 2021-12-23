@@ -9,9 +9,21 @@ VAR CONSTANT
 	MpCfgBufferSizeExceeded : DINT := 10001;
 	MpCfgDataTypeSizeExceeded : DINT := 10002;
 	MpCfgValueSizeExceeded : DINT := 10003;
-	MpCfgParaNotFound : DINT := 10010;
-	MpCfgTypeNotFound : DINT := 10011;
-	MpCfgValueNotFound : DINT := 10012;
+	MpCfgGroupNotFound0 : DINT := 10010;
+	MpCfgGroupNotFound1 : DINT := 10011;
+	MpCfgGroupNotFound2 : DINT := 10012;
+	MpCfgGroupNotFound3 : DINT := 10013;
+	MpCfgGroupNotFound4 : DINT := 10014;
+	MpCfgGroupNotFound5 : DINT := 10015;
+	MpCfgGroupNotFound6 : DINT := 10016;
+	MpCfgGroupNotFound7 : DINT := 10017;
+	MpCfgGroupNotFound8 : DINT := 10018;
+	MpCfgGroupNotFound9 : DINT := 10019;
+	MpCfgParaNotFound : DINT := 10020;
+	MpCfgTypeNotFound : DINT := 10021;
+	MpCfgValueNotFound : DINT := 10022;
+	MpCfgParaNameEmpty : DINT := 10030;
+	MpCfgMpLinkEmpty : DINT := 10031;
 END_VAR
 (*Read/Write constants*)
 VAR CONSTANT

@@ -7,6 +7,7 @@ FUNCTION_BLOCK MpCfgRW
 		ErrorReset : BOOL;
 		ParaName : STRING[MpCfgMaxNameSize];
 		ParaValue : STRING[MpCfgMaxValueSize];
+		GroupArray : REFERENCE TO MpCfgGroupArray;
 	END_VAR
 	VAR_OUTPUT
 		Active : BOOL;
@@ -18,6 +19,8 @@ FUNCTION_BLOCK MpCfgRW
 	END_VAR
 	VAR
 		Info : MpCfgInfoType;
+		zzEdge00000 : BOOL;
+		zzEdge00001 : BOOL;
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -28,18 +31,6 @@ FUNCTION FindInMem : DINT
 		data2 : UDINT;
 		len2 : UDINT;
 		direction : BOOL;
-	END_VAR
-	VAR
-		idx : UDINT;
-	END_VAR
-END_FUNCTION
-
-FUNCTION ReplaceString : BOOL
-	VAR_INPUT
-		dataSTR : UDINT;
-		searchSTR : UDINT;
-		replaceSTR : UDINT;
-		first : BOOL;
 	END_VAR
 	VAR
 		idx : UDINT;

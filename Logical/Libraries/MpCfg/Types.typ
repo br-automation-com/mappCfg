@@ -9,13 +9,14 @@ TYPE
 		FileClose_1 : FileClose;
 		MpComConfigManager_1 : MpComConfigManager;
 		Buffer : ARRAY[0..MpCfgMaxBufferSize]OF USINT;
-		NodeName : STRING[MpCfgMaxNameSize];
-		NodeValue : STRING[MpCfgMaxValueSize];
-		offset1 : DINT;
-		offset2 : DINT;
-		len : DINT;
+		DataOffset1 : DINT;
+		DataOffset2 : DINT;
+		DataOffset3 : DINT;
+		DataLen : DINT;
+		FileLen : DINT;
 		tmpStr1 : STRING[MpCfgMaxNameSize];
 		tmpStr2 : STRING[MpCfgMaxNameSize];
+		idx : UDINT;
 	END_STRUCT;
 	MpCfgStateType : 
 		(
@@ -26,8 +27,13 @@ TYPE
 		stateRead,
 		stateWrite,
 		stateClose,
+		stateFindGroup,
 		stateFindData,
 		stateInsertData,
+		stateImport,
 		stateError
 		);
+	MpCfgGroupArray : 	STRUCT 
+		Item : ARRAY[0..9]OF STRING[MpCfgMaxNameSize];
+	END_STRUCT;
 END_TYPE

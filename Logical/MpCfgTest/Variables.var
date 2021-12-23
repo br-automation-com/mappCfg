@@ -1,5 +1,8 @@
 VAR
-	mappRead : BOOL;
-	mappWrite : BOOL;
+	mappReadUnique : BOOL;
+	mappReadGroup : BOOL;
+	mappWriteUnique : BOOL;
+	mappWriteGroup : BOOL;
+	GroupArray : MpCfgGroupArray;
 	MpCfgRW_01 : MpCfgRW;
 END_VAR

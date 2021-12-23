@@ -6,7 +6,7 @@
       <Property ID="Name" Value="brdatabase" />
       <Property ID="UserName" Value="br" />
       <Property ID="Password" Value="bandr" />
-      <Property ID="IPAddress" Description="IPv4 address of the database script" />
+      <Property ID="IPAddress" Value="192.168.0.1" Description="IPv4 address of the database script" />
       <Property ID="PortNumber" Value="85" Description="SQL port number of the database script" />
       <Group ID="DBQueries">
         <Group ID="[0]">
@@ -31,11 +31,8 @@
         </Group>
         <Group ID="[1]">
           <Property ID="Name" Value="RecipeSave" />
-          <Selector ID="Type" Value="UPDATE">
-            <Property ID="TableName" Value="dbo.brtable" />
-            <Selector ID="Columns">
-              <Property ID="PV" Value="::Recipe.DATA" />
-            </Selector>
+          <Selector ID="Type">
+            <Property ID="1TypeName" Value="UPDATE" />
             <Group ID="Where">
               <Group ID="[0]">
                 <Property ID="Column" Value="product_name" />
@@ -49,8 +46,8 @@
         </Group>
         <Group ID="[2]">
           <Property ID="Name" Value="RecipeDelete" />
-          <Selector ID="Type" Value="DELETE">
-            <Property ID="TableName" Value="dbo.brtable" />
+          <Selector ID="Type">
+            <Property ID="1TypeName" Value="DELETE" />
             <Group ID="Where">
               <Group ID="[0]">
                 <Property ID="Column" Value="product_name" />
@@ -64,23 +61,14 @@
         </Group>
         <Group ID="[3]">
           <Property ID="Name" Value="RecipeNew" />
-          <Selector ID="Type" Value="INSERT">
-            <Property ID="Into" Value="dbo.brtable" />
-            <Selector ID="Columns">
-              <Property ID="PV" Value="::Recipe.DATA" />
-            </Selector>
+          <Selector ID="Type">
+            <Property ID="1TypeName" Value="INSERT" />
           </Selector>
         </Group>
         <Group ID="[4]">
           <Property ID="Name" Value="RecipeList" />
-          <Selector ID="Type" Value="Custom">
-            <Property ID="Query" Value="SELECT product_name FROM `dbo.brtable` WHERE product_name LIKE '%'" />
-            <Selector ID="Columns" Value="SingleColumns">
-              <Group ID="[0]">
-                <Property ID="Column" Value="product_name" />
-                <Property ID="PV" Value="::Recipe.DATA.product_name" />
-              </Group>
-            </Selector>
+          <Selector ID="Type">
+            <Property ID="1TypeName" Value="Custom" />
           </Selector>
         </Group>
       </Group>

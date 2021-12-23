@@ -7,5 +7,6 @@
     <File Description="Exported functions and function blocks">MpCfg.fun</File>
     <File>MpCfg.st</File>
     <File>LocalFunctions.st</File>
+    <File>changelog.txt</File>
   </Files>
 </Library>
