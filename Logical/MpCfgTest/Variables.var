@@ -1,0 +1,8 @@
+VAR
+	mappReadUnique : BOOL; (*Read unique value*)
+	mappReadGroup : BOOL; (*Read not unique value*)
+	mappWriteUnique : BOOL; (*Write unique value*)
+	mappWriteGroup : BOOL; (*Write not unique value*)
+	GroupArray : MpCfgGroupArray; (*Group array used for not unique values*)
+	MpCfgRW_01 : MpCfgRW; (*Functionblock for mapp configuration read/write*)
+END_VAR

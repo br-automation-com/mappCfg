@@ -1,4 +1,0 @@
-VAR
-	Read : BOOL;
-	MpReadLink_01 : MpReadLink;
-END_VAR
